@@ -6,3 +6,5 @@ console.log("fungsi ni");
 
 const multiply = (a, b) => a * b;
 console.log(multiply(2, 3));
+
+console.log("ini pembagian");
