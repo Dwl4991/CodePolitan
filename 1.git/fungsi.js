@@ -8,3 +8,5 @@ const multiply = (a, b) => a * b;
 console.log(multiply(2, 3));
 
 console.log("ini pembagian");
+
+console.log("buat sin");
