@@ -1,0 +1,13 @@
+h1 {
+  color: blue;
+  font-weight: 100;
+  text-decoration: underline wavy green;
+  font-size: 170%;
+}
+button {
+  color: darkblue;
+}
+
+p {
+  color: pink;
+}
