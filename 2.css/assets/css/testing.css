@@ -159,3 +159,69 @@ body {
   margin-bottom: 25px;
   max-width: 100%;
 }
+.pricing-header {
+  color: rgb(167, 167, 167);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  margin: 50px 0 25px;
+  color: rgb(2, 38, 245);
+}
+
+.pricing-feature-item {
+  font-size: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid rgb(168, 164, 164);
+}
+.pricing-feature-item:last-child {
+  border-bottom: 1px solid rgb(168, 164, 164);
+}
+
+.pricing-price {
+  color: blue;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+.pricing-button {
+  border: 1px solid rgb(135, 176, 252);
+  border-radius: 10px;
+  color: rgb(64, 64, 250);
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #86b9f8;
+}
+
+.pricing-button.is-feature {
+  background-color: rgb(126, 184, 238);
+  color: white;
+}
+.pricing-button.is-feature:hover {
+  background-color: rgb(90, 170, 245);
+  color: grey;
+}
+
+@media (min-width: 900px) {
+  .panel {
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
