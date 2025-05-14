@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Portofolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https:use.fontawesome.com/releases/v5.7.0/css/all.css" />
+    <style>
+      .gradient {
+        background-image: linear-gradient(to bottom right, #4c51bf, #702459);
+      }
+      .gradient-skill {
+        background-image: linear-gradient(#fc8181, #fefefe);
+      }
+      .gradient-bottom {
+        background-image: linear-gradient(#4c51bf, #702459);
+      }
+    </style>
   </head>
   <body>
     <section class="w-screen mx-auto px-4">
@@ -13,74 +25,218 @@
           <img src="img/logo.png" class="h-10 w-10 mr-2" alt="" />
         </div>
         <div class="block lg:hidden">
-          <a
-            href=""
-            class="flex items-center px-3 py-2 rounded border border-indigo-400 text-indigo-500 hover:text-indigo-700 hover:border-indigo-700"
-          >
-            <svg
-              class="block size-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              aria-hidden="true"
-              data-slot="icon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
+          <a href="" class="flex items-center px-3 py-2 rounded border border-indigo-400 text-indigo-500 hover:text-indigo-700 hover:border-indigo-700">
+            <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
           </a>
         </div>
         <div class="w-full block flex-grow lg:flex lg:item-center lg:w-auto">
           <div class="text-sm lg:flex-grow">
-            <a
-              href="#about"
-              class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4"
-              >About me</a
-            >
-            <a
-              href="#recent"
-              class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4"
-              >Recent Work</a
-            >
-            <a
-              href="#skil"
-              class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4"
-              >Skill Framework</a
-            >
-            <a
-              href="#kontak"
-              class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4"
-              >Contact me</a
-            >
+            <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">About me</a>
+            <a href="#recent" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">Recent Work</a>
+            <a href="#skil" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">Skill Framework</a>
+            <a href="#kontak" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">Contact me</a>
           </div>
           <div>
-            <a
-              href=""
-              class="inline-block text-sm px-4 py-2 rounded text-gray-600 border border-gray-600 hover:border-transparant hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0"
-              >Contact me</a
-            >
+            <a href="" class="inline-block text-sm px-4 py-2 rounded text-gray-600 border border-gray-600 hover:border-transparant hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0">Contact me</a>
           </div>
         </div>
       </nav>
     </section>
-    <section class="w-screen mx-auto py-4 bg-pink-500 md:bg-indigo-700 h-32">
-      About me
+    <section id="about" class="w-screen mx-auto py-4 bg-pink-500 gradient">
+      <div class="px-16 py-8 text-center text-white">
+        <h1 class="w-full text-5xl font-bold">About me</h1>
+        <div class="mt-4">
+          <div class="bg-pink-500 w-1/4 opacity-75 rounded h-1 mx-auto"></div>
+        </div>
+        <h2 class="text-3xl font-bold mb-2">Hai, Aku candra. Nice to meet you</h2>
+        <h3 class="text-lg mb-2">Saya adalah newbie programer sedang belajar bahasa pembrograman, dan belajar merancang suatu sistem yang sedang dibutuhkan</h3>
+        <div class="w-full">
+          <div class="px-4 py-4">
+            <img src="/FE-intermediate/2tailwind/portofolio/img/gw.png" class="shadow-lg rounded-full mx-auto text-center w-48" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 md:px-8 m-16 rounded-lg">
+        <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+          <i class="fas fa-laptop-code text-blue-500 fa-5x mb-6"></i>
+          <div class="p-4">
+            <p class="font-bold text-lg md:text-xl mb-6">Programing</p>
+            <p class="text-gray-600 text-base mb-2">PHP</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">.Net</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">C++</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">JS</p>
+            <hr class="text-gray-600 mb-2" />
+          </div>
+          <div class="px-2 py-4">
+            <button class="bg-blue-500 hover:bg-blue-700 md:bg-red-500 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
+          </div>
+        </div>
+        <div class="max-w-sm shadow-lg px-4 py-4 bg-white-500 m-3 text-center">
+          <i class="fas fa-pencil-ruler text-red-800 fa-5x mb-6"></i>
+          <div class="p-4">
+            <p class="font-bold text-lg md:text-xl mb-6">Design</p>
+            <p class="text-gray-600 text-base mb-2">CSS</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">Logo</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">Mobile</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">UI</p>
+            <hr class="text-gray-600 mb-2" />
+          </div>
+          <div class="px-2 py-4">
+            <button class="bg-blue-500 hover:bg-blue-700 md:bg-red-500 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
+          </div>
+        </div>
+        <div class="max-w-sm shadow-lg px-4 py-4 bg-white-500 m-3 text-center">
+          <i class="fas fa-database text-green-500 fa-5x mb-6"></i>
+          <div class="p-4">
+            <p class="font-bold text-lg md:text-xl mb-6">Database</p>
+            <p class="text-gray-600 text-base mb-2">MYSQL</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">SQL Server</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">Oracle</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">PostgreSQL</p>
+            <hr class="text-gray-600 mb-2" />
+          </div>
+          <div class="px-2 py-4">
+            <button class="bg-blue-500 hover:bg-blue-700 md:bg-red-500 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="w-screen mx-auto py-4 bg-white h-32">
-      Skill Framework
+    <section id="skil" class="container mx-auto py-4 bg-white px-4">
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-4/12 ml-auto mr-auto px-4 mt-20">
+          <img src="img/baner.jpeg" class="max-w-full rounded-lg shadow-lg" alt="" />
+        </div>
+        <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+          <div class="md:pr-12">
+            <h1 class="w-full my-2 text-5xl font-bold text-center text-gray-700">Skill Framework</h1>
+            <div class="mb-4">
+              <div class="h-1 mx-auto bg-pink-500 w-1/2 opacity-75 my-0 mx-0 rounded"></div>
+            </div>
+            <p class="mt-4 text-lg text-gray-600">Berikut adalah item dan skala keahlian untuk framework :</p>
+            <ul class="list-none mt-4">
+              <li class="grid grid-cols-2 py-2">
+                <p class="text-lg text-gray-600">Codeigniter</p>
+                <div class="gradient-skill w-7/8"></div>
+              </li>
+              <li class="grid grid-cols-2 py-2">
+                <p class="text-lg text-gray-600">Laravel</p>
+                <div class="gradient-skill w-3/4"></div>
+              </li>
+              <li class="grid grid-cols-2 py-2">
+                <p class="text-lg text-gray-600">Bootstrap</p>
+                <div class="gradient-skill w2-/3"></div>
+              </li>
+              <li class="grid grid-cols-2 py-2">
+                <p class="text-lg text-gray-600">Tailwindcss</p>
+                <div class="gradient-skill w-1/2"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
-    <section
-      class="w-screen mx-auto py-4 bg-gray-300 h-32 text-indigo-900 lg:text-green-700"
-    >
-      Recent Work
+    <section id="recent" class="container mx-auto py-8 bg-white">
+      <div class="text-center mb-8">
+        <h1 class="w-full my-2 text-5xl font-bold text-gray-700">My Recent Work</h1>
+        <div class="mb-4">
+          <div class="h-1 mx-auto bg-pink-500 w-1/4 opacity-75 px-0 py-0 rounded"></div>
+        </div>
+        <p class="text-lg m-4 text-gray-600">Berikut adalah pekerjaan terbaru saya :</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 m-8">
+        <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+          <img src="img/gw.png" class="w-full rounded" alt="" />
+          <div class="px-2 py-2 text-center">
+            <p class="font-bold text-xl mb-2 text-gray-700">Lorem, ipsum dolor.</p>
+            <p class="text-gray-700 text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam nam, porro facere vel quis omnis facilis alias tempore est accusamus atque blanditiis dignissimos cumque fugiat, ex ad, temporibus natus accusantium et quod?</p>
+          </div>
+          <div class="px-2 py-4 text-center">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Lihat detail</button>
+          </div>
+        </div>
+        <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+          <img src="img/gw.png" class="w-full rounded" alt="" />
+          <div class="px-2 py-2 text-center">
+            <p class="font-bold text-xl mb-2 text-gray-700">Lorem, ipsum dolor.</p>
+            <p class="text-gray-700 text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam nam, porro facere vel quis omnis facilis alias tempore est accusamus atque blanditiis dignissimos cumque fugiat, ex ad, temporibus natus accusantium et quod?</p>
+          </div>
+          <div class="px-2 py-4 text-center">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Lihat detail</button>
+          </div>
+        </div>
+        <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+          <img src="img/gw.png" class="w-full rounded" alt="" />
+          <div class="px-2 py-2 text-center">
+            <p class="font-bold text-xl mb-2 text-gray-700">Lorem, ipsum dolor.</p>
+            <p class="text-gray-700 text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam nam, porro facere vel quis omnis facilis alias tempore est accusamus atque blanditiis dignissimos cumque fugiat, ex ad, temporibus natus accusantium et quod?</p>
+          </div>
+          <div class="px-2 py-4 text-center">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Lihat detail</button>
+          </div>
+        </div>
+        <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+          <img src="img/gw.png" class="w-full rounded" alt="" />
+          <div class="px-2 py-2 text-center">
+            <p class="font-bold text-xl mb-2 text-gray-700">Lorem, ipsum dolor.</p>
+            <p class="text-gray-700 text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam nam, porro facere vel quis omnis facilis alias tempore est accusamus atque blanditiis dignissimos cumque fugiat, ex ad, temporibus natus accusantium et quod?</p>
+          </div>
+          <div class="px-2 py-4 text-center">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Lihat detail</button>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="w-screen mx-auto py-4 bg-indigo-700 h-32">
-      Contact Me
+    <section id="kontak" class="w-screen mx-auto py-4 gradient-bottom">
+      <h1 class="w-full my-2 text-5xl font-bold text-center text-white">Contact Me</h1>
+      <div class="mb-4">
+        <div class="h-1 mx-auto bg-pink-500 w-1/4 opacity-75 my-0 py-0 rounded"></div>
+      </div>
+      <div class="container p-4 mb-6 w-full lg:w-1/2 shadow-lg rounded-lg bg-gray-200 mx-auto">
+        <form class="p-5 lg:p-10 text-center" action="">
+          <h4 class="text-2xl font-semibold">Ingin menghubungi saya</h4>
+          <p class="mt-1 mb-4 text-gray-600">Tolong Kirimkan pensan</p>
+          <div class="w-full mb-4 mt-8">
+            <label for="" class="uppercase text-gray-600 text-sx font-bold">Nama Lengkap</label>
+            <input type="text" class="mt-2 px-3 py-3 placeholder-gray-500 text-gray-600 bg-white rounded text-sm shadow w-full" placeholder="Nama Lengkap" />
+          </div>
+          <div class="w-full mb-4 mt-4">
+            <label for="" class="uppercase text-gray-600 text-sx font-bold">Email</label>
+            <input type="text" class="mt-2 px-3 py-3 placeholder-gray-500 text-gray-600 bg-white rounded text-sm shadow w-full" placeholder="Email" />
+          </div>
+          <div class="w-full mb-4 mt-4">
+            <label for="" class="uppercase text-gray-600 text-sx font-bold">Pesan</label>
+            <textarea rows="4" cols="80" class="mt-2 px-3 py-3 placeholder-gray-500 text-gray-600 bg-white rounded text-sm shadow w-full" placeholder="Tulis Pesan ...."></textarea>
+          </div>
+          <div class="mt-6">
+            <button class="bg-indigo-700 text-white text-sm font-bold uppercase px-6 py-3 rounded shadow hover:bg-indigo-900 hover:shadow-lg" type="button">Kirim Pesan</button>
+          </div>
+        </form>
+      </div>
     </section>
-    <section class="w-screen mx-auto py-4 bg-white h-32">Footer</section>
+    <section class="w-screen mx-auto py-4 bg-white mt-8 mb-8">
+      <div class="text-center">
+        <a href="#" class="text-indigo-700 hover:text-indigo-900 p-2">
+          <i class="fa-2x fab fa-facebook"></i>
+        </a>
+        <a href="#" class="text-indigo-700 hover:text-indigo-900 p-2">
+          <i class="fa-2x fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-indigo-700 hover:text-indigo-900 p-2">
+          <i class="fa-2x fab fa-instagram"></i>
+        </a>
+      </div>
+      <div class="text-center mt-4 text-gray-600">Design with Tailwindcss</div>
+    </section>
   </body>
 </html>
