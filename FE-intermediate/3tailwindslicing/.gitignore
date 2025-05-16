@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Build files
+dist/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Env & config
+.env
+
+# VS Code
+.vscode/
+
+# Lock file (opsional, kalau kamu memang nggak mau include ini)
+
