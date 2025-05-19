@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./dist/**/*.{html,js}"],
+  content: ['./dist/**/*.{html,js}'],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    iconPlugin({
+      collection: getIconCollections(['material-symbols']),
+    }),
+  ],
 };
