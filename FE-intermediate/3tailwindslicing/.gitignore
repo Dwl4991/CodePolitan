@@ -3,6 +3,7 @@ node_modules/
 
 # Build files
 dist/
+!dist/index.html
 *.log
 
 # System files
@@ -16,4 +17,3 @@ Thumbs.db
 .vscode/
 
 # Lock file (opsional, kalau kamu memang nggak mau include ini)
-
