@@ -8,8 +8,6 @@ export default {
     extend: {},
   },
   plugins: [
-    iconPlugin({
-      collection: getIconCollections(['material-symbols']),
-    }),
+   
   ],
 };

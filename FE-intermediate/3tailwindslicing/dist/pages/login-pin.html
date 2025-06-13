@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+  <title>Register</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <div class="container max-w-[768px]">
+      <div class="flex h-dvh flex-col items-center justify-center bg-green-50 p-4">
+
+        <div class="flex w-full flex-col">
+         <!-- Ilustration -->
+             <img src="../assets/images/fingerprint.svg" alt="Illustration" class="h-[160px]">
+         <!-- // Ilustration -->
+
+         <!-- Title + Description -->
+          <div class="mt-8 mb-5 flex flex-col">
+            <h1 class="text-center text-lg font-semibold text-gray-900">Masukan 6 Digit PIN</h1>
+            <p class="text-gray-400 text-center text-xs font-medium">Masukan 6 Digit PIN yang telah Anda daftarkan sebelumnya</p>
+          </div>
+         <!-- ./ Title + Description -->
+          <!-- Form -->
+           <form action="#" class="flex flex-col gap-4 mt-4" method="post">
+            <!-- input pin -->
+            <div class="flex flex-col gap-y-1.5">
+                
+                <div class="relative">
+                    <input  type="number" placeholder="6 Digit PIN" class="w-full placeholder:text-gray-400 rounded-2xl border border-gray-400 bg-white p-3 ps-12 pe-12 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:invalid:ring-red-900 peer disabled:border-gray-400 disabled:bg-gray-100">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-4 text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900">
+                        <span class="material-symbols-outlined rounded text-md ">security</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ./ input pin -->
+
+    
+  
+<!-- Button Action -->
+<button type="button" class=" justify-center inline-flex items-center bg-green-500 text-white rounded-xl p-2.5 uppercase gap-2 text-sm font-semibold hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400">
+    
+    <span>Lanjutkan</span>
+    <span class="material-symbols-outlined text-md">chevron_right</span>
+</button>
+<!-- ./Button Action -->
+
+<!-- Help Text -->
+ <p class="mt-2 text-center text-xs text-neutral-400">
+    <a href="#" class="text-xs font-bold text-green-300 hover:text-green-600/70 focus:outline-none focus:ring-2 focus:ring-green-400">Saya Lupa PIN </a> 
+ </p>
+<!-- ./ Help Text -->
+
+           </form>
+          <!-- ./ Form -->
+        </div>
+      </div>
+    </div>
+</body>
+</html>
