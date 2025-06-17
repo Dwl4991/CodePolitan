@@ -5,9 +5,11 @@ export default {
     container: {
       center: true,
     },
-    extend: {},
+    extend: {
+      colors: {
+        'custom-green': '#15AB8E',
+      },
+    },
   },
-  plugins: [
-   
-  ],
+  plugins: [],
 };

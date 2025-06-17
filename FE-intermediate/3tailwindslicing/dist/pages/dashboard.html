@@ -1,154 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
-  <title>Dashboard</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container max-w-[768px]">
-    <div class="flex min-h-dvh flex-col gap-4 bg-green-50 p-4">
-      <div class="flex w-full flex-col">
-        <!-- Avatar + name -->
-         <div class="flex mb-4">
-          <a href="#" class="flex items-center gap-2 hover:opacity-70focus:outline-none focus:ring-2 focus:ring-green-400">
-            <img src="https://avatar.iran.liara.run/public/24" alt="Avatar" class="size-8">
-            <span class="text-lg font-semibold text-gray-900">Jhon Dear</span>
-          </a>
-         </div>
-        <!-- ./Avatar + name-->
-         <!-- Card Balance + Action -->
-         <!-- Card Balance -->
-         
-         <div class="mb-8 flex-col">
-           <div class="flex flex-col h-[165px] bg-gradient-to-b from-green-600 to-emerald-400 rounded-2xl p-5 justify-between text-white">
-             <h1 class="font-brand text-2xl font-bold">KUSAKU</h1>
-             <h2 class="flex items-center gap-2 text-2xl font-medium">
-               <span class="">Rp. 52.000.000, 00</span>
-               <button class="material-symbols-outlined text-2xl">visibility</button>
+      <div class="flex min-h-dvh flex-col gap-4 bg-green-50 p-4 pb-[80px]">
+        <div class="flex w-full flex-col">
+          <!-- Avatar + name -->
+          <div class="mb-4 flex">
+            <a
+              href="#"
+              class="hover:opacity-70focus:outline-none flex items-center gap-2 focus:ring-2 focus:ring-green-400"
+            >
+              <img
+                src="https://avatar.iran.liara.run/public/24"
+                alt="Avatar"
+                class="size-8"
+              />
+              <span class="text-lg font-semibold text-gray-900">Jhon Dear</span>
+            </a>
+          </div>
+          <!-- ./Avatar + name-->
+          <!-- Card Balance + Action -->
+          <!-- Card Balance -->
+
+          <div class="mb-8 flex-col">
+            <div
+              class="flex h-[165px] flex-col justify-between rounded-2xl bg-gradient-to-b from-green-600 to-emerald-400 p-5 text-white"
+            >
+              <h1 class="font-brand text-2xl font-bold">KUSAKU</h1>
+              <h2 class="flex items-center gap-2 text-2xl font-medium">
+                <span class="">Rp. 52.000.000, 00</span>
+                <button class="material-symbols-outlined text-2xl">
+                  visibility
+                </button>
               </h2>
             </div>
             <!-- ./Card Balance -->
             <!--  Card Action -->
-              <div class="flex gap-3 mt-2">
-                <button type="button" class="w-full inline-flex justify-center items-center bg-transparent border border-green-500 text-green-400 rounded-xl p-2 uppercase gap-2 text-xs font-semibold hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed disabled:border-gray-300 disabled:bg-transparent disabled:text-gray-400 ">
-      <span class="material-symbols-outlined text-sm">download</span>
-      <span>Top Up</span>
-      
-    </button>
-                <button type="button" class="w-full inline-flex items-center justify-center bg-green-500 text-white rounded-xl p-2 uppercase gap-2 text-xs font-semibold hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400">
-      <span class="material-symbols-outlined text-sm">upload</span>
-      <span>Tranfer</span>
-      
-    </button>
-              </div>
+            <div class="mt-2 flex gap-3">
+              <button
+                type="button"
+                class="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-green-500 bg-transparent p-2 text-xs font-semibold uppercase text-green-400 hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:border-gray-300 disabled:bg-gray-200 disabled:bg-transparent disabled:text-gray-400"
+              >
+                <span class="material-symbols-outlined text-sm">download</span>
+                <span>Top Up</span>
+              </button>
+              <button
+                type="button"
+                class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-green-500 p-2 text-xs font-semibold uppercase text-white hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400"
+              >
+                <span class="material-symbols-outlined text-sm">upload</span>
+                <span>Tranfer</span>
+              </button>
+            </div>
             <!-- ./ Card Action -->
           </div>
 
-         <!-- ./Card Balance + Action -->
+          <!-- ./Card Balance + Action -->
           <div class="">
-  <!-- <div class="text-center text-2xl"> Card List</div> -->
-  <div class="bg-white p-2.5 shadow-md rounded-[20px]">
-    <!-- Card Header -->
-     <div class="flex justify-between p-2.5">
-      <p class="font-semibold text-gray-900">Riwayat Transaksi</p>
-      <a href="#" class="text-xs font-semibold text-green-300 hover:text-green-600/70 focus:outline-none focus:ring-2 focus:ring-green-400">Lihat Lainnya</a>
-     </div>
-    <!-- ./Card Header -->
-    <!-- Items -->
-    <a href="" class="flex justify-between hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 p-3 rounded-2xl">
-      <!-- Left -->
-      <span class="flex items-center gap-5">
-        <span class="material-symbols-outlined text-lg text-green-400 flex-shrink-0">download</span>
-        <span class="flex flex-col">
-          <span class="text-sm font-semibold text-gray-900 line-clamp-2">Candra</span>
-          <span class="text-xs text-gray-500 line-clamp-1">25 Agustus 2025</span>
-        </span>
-      </span>
-      <!-- /Left -->
-       <!-- Right -->
-        <span class="flex items-center gap-2 flex-shrink-0">
-          <span class="text-xs font-medium text-red-500">Rp. 200.000</span>
-          <span class="material-symbols-outlined rounded text-md text-gray-900">chevron_right</span>
-        </span>
-       <!-- /Right -->
-
-    </a>
-    <div class=" my-2.5 flex gap-4 whitespace-nowrap px-5 last:hidden">
-<div class="flex-grow-1 h-[1px] bg-gray-300 w-full"></div>
-    </div>
-    <!-- Items -->
-    <a href="" class="flex justify-between hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 p-3 rounded-2xl">
-      <!-- Left -->
-      <span class="flex items-center gap-5">
-        <span class="material-symbols-outlined text-lg text-green-400 flex-shrink-0">download</span>
-        <span class="flex flex-col">
-          <span class="text-sm font-semibold text-gray-900 line-clamp-2">Candra</span>
-          <span class="text-xs text-gray-500 line-clamp-1">30 Agustus 2025</span>
-        </span>
-      </span>
-      <!-- /Left -->
-       <!-- Right -->
-        <span class="flex items-center gap-2 flex-shrink-0">
-          <span class="text-xs font-medium text-red-500">Rp. 200.000</span>
-          <span class="material-symbols-outlined rounded text-md text-gray-900">chevron_right</span>
-        </span>
-       <!-- /Right -->
-
-    </a>
-    <div class=" my-2.5 flex gap-4 whitespace-nowrap px-5 last:hidden">
-<div class="flex-grow-1 h-[1px] bg-gray-300 w-full"></div>
-    </div>
-    <!-- Items -->
-    <a href="" class="flex justify-between hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 p-3 rounded-2xl">
-      <!-- Left -->
-      <span class="flex items-center gap-5">
-        <span class="material-symbols-outlined text-lg text-green-400 flex-shrink-0">download</span>
-        <span class="flex flex-col">
-          <span class="text-sm font-semibold text-gray-900 line-clamp-2">Candra</span>
-          <span class="text-xs text-gray-500 line-clamp-1">30 Agustus 2025</span>
-        </span>
-      </span>
-      <!-- /Left -->
-       <!-- Right -->
-        <span class="flex items-center gap-2 flex-shrink-0">
-          <span class="text-xs font-medium text-red-500">Rp. 200.000</span>
-          <span class="material-symbols-outlined rounded text-md text-gray-900">chevron_right</span>
-        </span>
-       <!-- /Right -->
-
-    </a>
-    <div class=" my-2.5 flex gap-4 whitespace-nowrap px-5 last:hidden">
-<div class="flex-grow-1 h-[1px] bg-gray-300 w-full"></div>
-    </div>
-    <!-- ./Items -->
-  </div>
-</div>
+            <!-- <div class="text-center text-2xl"> Card List</div> -->
+            <div class="rounded-[20px] bg-white p-2.5 shadow-md">
+              <!-- Card Header -->
+              <div class="flex justify-between p-2.5">
+                <p class="font-semibold text-gray-900">Riwayat Transaksi</p>
+                <a
+                  href="#"
+                  class="text-xs font-semibold text-green-300 hover:text-green-600/70 focus:outline-none focus:ring-2 focus:ring-green-400"
+                  >Lihat Lainnya</a
+                >
+              </div>
+              <!-- ./Card Header -->
+              <!-- Items -->
+              <a
+                href=""
+                class="flex justify-between rounded-2xl p-3 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+              >
+                <!-- Left -->
+                <span class="flex items-center gap-5">
+                  <span
+                    class="material-symbols-outlined flex-shrink-0 text-lg text-green-400"
+                    >download</span
+                  >
+                  <span class="flex flex-col">
+                    <span
+                      class="line-clamp-2 text-sm font-semibold text-gray-900"
+                      >Candra</span
+                    >
+                    <span class="line-clamp-1 text-xs text-gray-500"
+                      >25 Agustus 2025</span
+                    >
+                  </span>
+                </span>
+                <!-- /Left -->
+                <!-- Right -->
+                <span class="flex flex-shrink-0 items-center gap-2">
+                  <span class="text-xs font-medium text-red-500"
+                    >Rp. 200.000</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-md rounded text-gray-900"
+                    >chevron_right</span
+                  >
+                </span>
+                <!-- /Right -->
+              </a>
+              <div class="my-2.5 flex gap-4 whitespace-nowrap px-5 last:hidden">
+                <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+              </div>
+              <!-- Items -->
+              <a
+                href=""
+                class="flex justify-between rounded-2xl p-3 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+              >
+                <!-- Left -->
+                <span class="flex items-center gap-5">
+                  <span
+                    class="material-symbols-outlined flex-shrink-0 text-lg text-green-400"
+                    >download</span
+                  >
+                  <span class="flex flex-col">
+                    <span
+                      class="line-clamp-2 text-sm font-semibold text-gray-900"
+                      >Candra</span
+                    >
+                    <span class="line-clamp-1 text-xs text-gray-500"
+                      >30 Agustus 2025</span
+                    >
+                  </span>
+                </span>
+                <!-- /Left -->
+                <!-- Right -->
+                <span class="flex flex-shrink-0 items-center gap-2">
+                  <span class="text-xs font-medium text-red-500"
+                    >Rp. 200.000</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-md rounded text-gray-900"
+                    >chevron_right</span
+                  >
+                </span>
+                <!-- /Right -->
+              </a>
+              <div class="my-2.5 flex gap-4 whitespace-nowrap px-5 last:hidden">
+                <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+              </div>
+              <!-- Items -->
+              <a
+                href=""
+                class="flex justify-between rounded-2xl p-3 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+              >
+                <!-- Left -->
+                <span class="flex items-center gap-5">
+                  <span
+                    class="material-symbols-outlined flex-shrink-0 text-lg text-green-400"
+                    >download</span
+                  >
+                  <span class="flex flex-col">
+                    <span
+                      class="line-clamp-2 text-sm font-semibold text-gray-900"
+                      >Candra</span
+                    >
+                    <span class="line-clamp-1 text-xs text-gray-500"
+                      >30 Agustus 2025</span
+                    >
+                  </span>
+                </span>
+                <!-- /Left -->
+                <!-- Right -->
+                <span class="flex flex-shrink-0 items-center gap-2">
+                  <span class="text-xs font-medium text-red-500"
+                    >Rp. 200.000</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-md rounded text-gray-900"
+                    >chevron_right</span
+                  >
+                </span>
+                <!-- /Right -->
+              </a>
+              <div class="my-2.5 flex gap-4 whitespace-nowrap px-5 last:hidden">
+                <div class="flex-grow-1 h-[1px] w-full bg-gray-300"></div>
+              </div>
+              <!-- ./Items -->
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Navbar -->
-     <div class="flex justify-evenly bg-white fixed bottom-0 w-full left-0 z-10">
-  <a href="" class="w-full group flex flex-col items-center p-3 text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400 ">
-    <span class="material-symbols-outlined text-md inline group-hover:hidden text-blue-500">home</span>
-    <span class="material-symbols-outlined text-md hidden group-hover:inline">home</span>
-    <span>Beranda</span>
-  </a>
-  <a href="" class="w-full group flex flex-col items-center p-3 text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400 ">
-    <span class="material-symbols-outlined text-md inline group-hover:hidden text-blue-500">receipt</span>
-    <span class="material-symbols-outlined text-md hidden group-hover:inline">receipt</span>
-    <span>Riwayat</span>
-  </a>
-  <a href="" class="w-full group flex flex-col items-center p-3 text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400 ">
-    <span class="material-symbols-outlined text-md inline group-hover:hidden text-blue-500">person</span>
-    <span class="material-symbols-outlined text-md hidden group-hover:inline">person</span>
-    <span>Akun</span>
-  </a>
-</div>
-    <!-- ./Navbar -->
+      <!-- Navbar -->
+      <div
+        class="fixed bottom-0 left-0 z-10 flex w-full justify-evenly bg-white"
+      >
+        <a
+          href=""
+          class="group flex w-full flex-col items-center p-3 text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+        >
+          <span
+            class="material-symbols-outlined text-md inline text-blue-500 group-hover:hidden"
+            >home</span
+          >
+          <span
+            class="material-symbols-outlined text-md hidden group-hover:inline"
+            >home</span
+          >
+          <span>Beranda</span>
+        </a>
+        <a
+          href=""
+          class="group flex w-full flex-col items-center p-3 text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+        >
+          <span
+            class="material-symbols-outlined text-md inline text-blue-500 group-hover:hidden"
+            >receipt</span
+          >
+          <span
+            class="material-symbols-outlined text-md hidden group-hover:inline"
+            >receipt</span
+          >
+          <span>Riwayat</span>
+        </a>
+        <a
+          href=""
+          class="group flex w-full flex-col items-center p-3 text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+        >
+          <span
+            class="material-symbols-outlined text-md inline text-blue-500 group-hover:hidden"
+            >person</span
+          >
+          <span
+            class="material-symbols-outlined text-md hidden group-hover:inline"
+            >person</span
+          >
+          <span>Akun</span>
+        </a>
+      </div>
+      <!-- ./Navbar -->
     </div>
-</body>
+  </body>
 </html>
