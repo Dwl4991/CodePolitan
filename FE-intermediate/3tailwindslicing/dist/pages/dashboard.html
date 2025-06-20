@@ -71,7 +71,8 @@
               </button>
               <button
                 type="button"
-                class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-green-500 p-2 text-xs font-semibold uppercase text-white hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400"
+                class="open inline-flex w-full items-center justify-center gap-2 rounded-xl bg-green-500 p-2 text-xs font-semibold uppercase text-white hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400"
+                data-modal-target="modal-transfer"
               >
                 <span class="material-symbols-outlined text-sm">upload</span>
                 <span>Tranfer</span>
@@ -319,6 +320,58 @@
         </div>
       </dialog>
       <!-- ./ Modal Topup -->
+      <!-- Modal Transfer -->
+      <dialog
+        id="modal-transfer"
+        class="m-0 size-full bg-transparent backdrop:bg-black/50 backdrop:backdrop-blur-lg open:flex open:max-h-none open:max-w-none open:flex-col open:justify-end"
+      >
+        <div class="flex flex-col">
+          <div class="flex justify-between px-6 pb-8">
+            <button
+              type="button"
+              class="invisible inline-flex items-center gap-2 rounded-xl bg-white p-2 text-xs font-semibold uppercase text-green-400 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:border-gray-300 disabled:bg-gray-200 disabled:bg-transparent disabled:text-gray-200 disabled:text-gray-400"
+            >
+              <span class="material-symbols-outlined text-sm"
+                >chevron_left</span
+              >
+              <span>Back</span>
+            </button>
+            <button
+              type="button"
+              class="close inline-flex items-center gap-2 rounded-xl bg-white p-2 text-xs font-semibold uppercase text-green-400 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:border-gray-300 disabled:bg-gray-200 disabled:bg-transparent disabled:text-gray-200 disabled:text-gray-400"
+              data-modal-target="modal-transfer"
+            >
+              <span class="material-symbols-outlined text-sm">close</span>
+              <span>Close</span>
+            </button>
+          </div>
+          <div class="flex flex-col gap-8 rounded-t-[36px] bg-white p-6">
+            <!-- Section Account Check -->
+            <div class="" id="modal-content--accouunt-check">
+              <form action="#" method="post" class="flec-col flex gap-4">
+                <!-- Logo + search button -->
+                <div class="flex justify-between">
+                  <div class="">sdaf</div>
+                  <a href="">sadf</a>
+                </div>
+                <!-- ./Logo + search button -->
+              </form>
+            </div>
+            <!-- ./ Section Account Check -->
+
+            <!-- Section Search Contact-->
+            <div class="" id="modal-content--search-contact">
+              Search Contact
+            </div>
+            <!-- ./ Section Search Contact -->
+
+            <!-- Section input nominal -->
+            <div class="" id="modal-content--input-nominal">Input Nominal</div>
+            <!-- ./ Section Input nominal -->
+          </div>
+        </div>
+      </dialog>
+      <!-- ./ Modal Transfer -->
     </div>
     <script src="../assets/js/main.js"></script>
   </body>
