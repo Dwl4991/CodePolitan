@@ -769,6 +769,14 @@ video {
   height: 100dvh;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
 .min-h-dvh {
   min-height: 100dvh;
 }
@@ -1066,6 +1074,10 @@ video {
   line-height: 1rem;
 }
 
+.text-\[4px\] {
+  font-size: 4px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1130,6 +1142,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
 }
 
 .opacity-70 {
